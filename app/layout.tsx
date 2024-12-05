@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+// import Header from "@/components/header/page";
+import Navbar from "@/components/navbar/page";
 
 const montserrat = localFont({
 	src: "./fonts/Montserrat.ttf",
@@ -31,6 +33,7 @@ export default function RootLayout({
 				<body
 					className={`${montserrat.variable} ${montserratItalic.variable} antialiased bg-gray-100`}
 				>
+					<Navbar />
 					{children}
 				</body>
 			</html>

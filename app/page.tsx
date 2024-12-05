@@ -11,14 +11,16 @@ export default function HomePage() {
 						Nishant R.
 					</h1>
 					<p className='text-xl text-gray-700 mt-4'>
-						I am a freelance software developer specializing in
-						modern frontend technologies like React, Next.js, and
-						Tailwind CSS.
+						I am a individual freelance software developer
+						specializing in modern fullstack technologies like
+						React(Expert), Next.js, VueJS, AngularJS and NodeJS,
+						ExpressJS, Redux, MobEx, ReactNative, Tailwind CSS, MUI,
+						RTL, RTK etc.
 					</p>
 					<p className='text-lg text-gray-500 mt-2'>
 						With expertise in building scalable web applications,
-						UI/UX design, and performance optimization, I bring your
-						ideas to life.
+						backend development, mobile development, and performance
+						optimization, I bring your ideas to life.
 					</p>
 				</div>
 
@@ -26,8 +28,7 @@ export default function HomePage() {
 					<Image
 						src={Profile}
 						alt='Nishant R.'
-						width={500}
-						height={500}
+						width={600}
 						className='rounded-3xl shadow-lg'
 					/>
 				</div>
