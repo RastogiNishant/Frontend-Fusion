@@ -1,8 +1,7 @@
-import Image from "next/image"; // Use Next.js Image component for optimization
-// import Profile from "@/app/assets/images/Mona.jpg";
+import Image from "next/image";
 import Profile from "@/app/assets/images/Me.jpg";
-
-export default function HomePage() {
+import TechStack from "@/components/techStack";
+const HomePage = () => {
 	return (
 		<div className='min-h-screen flex items-center justify-center bg-gray-100'>
 			<div className='container mx-auto flex flex-col lg:flex-row items-center p-8'>
@@ -32,7 +31,11 @@ export default function HomePage() {
 						className='rounded-3xl shadow-lg'
 					/>
 				</div>
+
+				<TechStack />
 			</div>
 		</div>
 	);
-}
+};
+
+export default HomePage;

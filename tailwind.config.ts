@@ -8,6 +8,12 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				xs: "390px",
+				sm: "768px",
+				md: "1024px",
+				lg: "1440px",
+			},
 			keyframes: {
 				wiggle: {
 					"0%, 100%": { transform: "rotate(-3deg)" },

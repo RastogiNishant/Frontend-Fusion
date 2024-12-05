@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Menu and Close icons
 import Logo from "@/app/assets/images/Logo.png";
-import Dropdown from "../dropdown/page";
+import Dropdown from "../dropdown";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,9 @@ export default function Header() {
 					<Image
 						src={Logo}
 						alt='Logo'
-						width={100}
+						width={300}
 						height={50}
-						className='h-10 w-auto mr-4 hover:cursor-pointer'
+						className='h-10 w-full mr-4 hover:cursor-pointer'
 					/>
 				</Link>
 

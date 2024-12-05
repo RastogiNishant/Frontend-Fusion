@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-// import Header from "@/components/header/page";
-import Navbar from "@/components/navbar/page";
+import Header from "@/components/header";
 
 const montserrat = localFont({
 	src: "./fonts/Montserrat.ttf",
@@ -18,8 +17,7 @@ const montserratItalic = localFont({
 
 export const metadata: Metadata = {
 	title: "Nishant's Portfolio",
-	description:
-		"A portfolio built with Next.js showcasing modern frontend skills.",
+	description: "A portfolio built with Next.js showcasing modern skills.",
 };
 
 export default function RootLayout({
@@ -29,12 +27,27 @@ export default function RootLayout({
 }>) {
 	return (
 		<>
-			<html lang='en'>
+			<html lang='en' data-theme='light'>
 				<body
 					className={`${montserrat.variable} ${montserratItalic.variable} antialiased bg-gray-100`}
 				>
-					<Navbar />
-					{children}
+					<div className='flex flex-col min-h-screen'>
+						<Header />
+
+						<main className='flex-grow pt-16'>
+							<div className='container mx-auto p-4'>
+								{children}
+							</div>
+						</main>
+
+						<footer className='bg-gray-800 text-white'>
+							<div className='container mx-auto p-4 text-center'>
+								<p>
+									&copy; 2024 Nishant R. All rights reserved.
+								</p>
+							</div>
+						</footer>
+					</div>
 				</body>
 			</html>
 		</>
