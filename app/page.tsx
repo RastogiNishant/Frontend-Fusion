@@ -3,7 +3,7 @@ import Profile from "@/app/assets/images/Me.jpg";
 import TechStack from "@/components/techStack";
 const HomePage = () => {
 	return (
-		<div className='min-h-screen flex items-center justify-center bg-gray-100'>
+		<div className='min-h-screen flex flex-col items-center justify-center bg-gray-100'>
 			<div className='container mx-auto flex flex-col lg:flex-row items-center p-8'>
 				<div className='text-left lg:w-1/2 mb-8 lg:mb-0'>
 					<h1 className='text-4xl font-bold text-gray-900'>
@@ -31,9 +31,8 @@ const HomePage = () => {
 						className='rounded-3xl shadow-lg'
 					/>
 				</div>
-
-				<TechStack />
 			</div>
+			<TechStack />
 		</div>
 	);
 };
